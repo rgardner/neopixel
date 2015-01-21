@@ -48,7 +48,7 @@ void clearStrip() {
   strip.show();
 }
 
-void splash(int center, int radius, strip.Color color) {
+void splash(int center, int radius, uint32_t color) {
   for (int i = 0; i < radius; i++) {
     if (center+i > NUM_PIXELS) strip.setPixelColor(center + i, color);
     if (center-i < 0) strip.setPixelColor(center - i, color);
